@@ -5,7 +5,7 @@
             "name": "Python Debugger: Django",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}\\znanijatpu\\manage.py",
+            "program": "${workspaceFolder}/znanijatpu/manage.py",
             "args": [
                 "runserver"
             ],

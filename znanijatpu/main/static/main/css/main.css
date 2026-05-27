@@ -50,8 +50,15 @@ body {
     border-radius: 6px;
     transition: background 0.2s;
 }
-.sidebar a:hover { background: #e9ecef; color: #0d6efd; }
-.sidebar .active { background: #0d6efd; color: white !important; }
+
+.sidebar a:hover { 
+    background: #e9ecef; 
+    color: #5e17eb; 
+}
+.sidebar .active { 
+    background: #5e17eb; 
+    color: white !important; 
+}
 
 .main-content {
     margin-left: 280px;
@@ -78,7 +85,7 @@ body {
     color: #666;
     list-style: none;
 }
-.sidebar li.active { background-color: #f3e8ff; color: #8a2be2; font-weight: bold; }
+.sidebar li.active { background-color: #f3e8ff; color: #5e17eb; font-weight: bold; }
 .sidebar li:hover:not(.active) { background-color: #eee; }
 
 /* Подменю */
@@ -300,4 +307,110 @@ form {
         padding-left: 1rem !important;
         padding-right: 1rem !important;
     }
+}
+
+   /*ФИОЛЕТОВЫЙ СТИЛЬ КНОПОК И ИДЕАЛЬНОЕ ЦЕНТРИРОВАНИЕ ШАПКИ*/
+/* Стили кнопок под новый дизайн */
+.btn-purple-main {
+    background-color: #5e17eb !important;
+    border-color: #5e17eb !important;
+    color: #ffffff !important;
+    border-radius: 20px !important; /* Округлые аккуратные кнопки из макета */
+    font-weight: 600 !important;
+    padding: 6px 18px !important;
+    transition: all 0.2s ease-in-out !important;
+}
+.btn-purple-main:hover {
+    background-color: #4a11c8 !important;
+    border-color: #4a11c8 !important;
+    box-shadow: 0 4px 10px rgba(94, 23, 235, 0.25) !important;
+}
+
+.btn-purple-outline {
+    background-color: transparent !important;
+    border-color: #5e17eb !important;
+    color: #5e17eb !important;
+    border-radius: 20px !important;
+    font-weight: 600 !important;
+    padding: 6px 18px !important;
+    transition: all 0.2s ease-in-out !important;
+}
+.btn-purple-outline:hover {
+    background-color: #5e17eb !important;
+    color: #ffffff !important;
+}
+
+/*Выравнивание элементов*/
+@media (min-width: 992px) {
+    /* Ограничиваем контейнер и фиксируем relative */
+    .navbar .container-fluid {
+        position: relative !important;
+        display: flex !important;
+        align-items: center !important;
+        height: 100% !important;
+    }
+
+    /* Строка поиска принудительно встает в геометрический центр экрана и расширяется */
+    .search-center-desktop {
+        position: absolute !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 100% !important;
+        max-width: 650px !important;
+        margin: 0 !important;
+        z-index: 5 !important;
+    }
+
+    /* Скругление краев самого инпута*/
+    .search-center-desktop .input-group {
+        border-radius: 20px !important;
+        overflow: hidden !important;
+    }
+
+    /* Блок кнопок принудительно улетает в самый правый угол и встает вровень с поиском */
+    .navbar .container-fluid > .ms-auto {
+        margin-left: auto !important;
+        display: flex !important;
+        align-items: center !important;
+        z-index: 10 !important;
+        white-space: nowrap !important; /* Кнопки никогда не упадут на вторую строку */
+    }
+}
+
+/*ЭФФЕКТ МАТОВОГО СТЕКЛА ДЛЯ NAVBAR*/
+.navbar {
+    background-color: rgba(255, 255, 255, 0.05) !important; 
+    backdrop-filter: blur(12px) !important; 
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+/*ИСПРАВЛЕНИЕ ОБВОДКИ И СКРУГЛЕНИЯ ПОИСКОВОЙ СТРОКИ*/
+.search-center-desktop .input-group :first-child,
+.navbar form .input-group :first-child {
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+}
+.search-center-desktop .input-group .btn,
+.navbar form .input-group .btn {
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    border-left: 1px solid #dee2e6 !important;
+}
+.navbar form .input-group {
+    border-radius: 20px;
+    background-color: #fff;
+}
+.navbar form .form-control {
+    border-radius: 0 !important;
+}
+
+/*КНОПКИ "НАЙТИ"*/
+.navbar form .input-group .btn {
+    color: #35088e !important;
+    font-weight: 700 !important;
+}
+.navbar form .input-group .btn:hover {
+    color: #ffffff !important; 
+    background-color: #834df0 !important;
+    border-color: #5e17eb !important;
 }
