@@ -61,18 +61,7 @@ body {
 }
 
 .main-content {
-    margin-left: 280px;
-    margin-top: 56px;
     padding: 1.5rem;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
 }
 
 
@@ -123,6 +112,13 @@ body {
 .card-header { display: flex; justify-content: space-between; margin-bottom: 10px; }
 
 /* Бейджи */
+.bg-purple {
+    background-color: rgb(246, 232, 248) !important; /* Цвет фона */
+    color: rgb(174, 93, 248) !important;            /* Цвет текста (белый) */
+    font-weight: 500;                     /* Можно добавить жирности, если нужно */
+    padding: 0.35em 0.65em;               /* Отступы внутри бейджа */
+    border-radius: 0.25rem;               /* Скругление углов */
+}
 .badge { padding: 4px 12px; border-radius: 15px; font-size: 0.8rem; font-weight: bold; }
 .math { background: #f3e8ff; color: #9811f3; }
 .physics { background: #e0f2fe; color: #9811f3; }
@@ -265,11 +261,6 @@ form {
     overflow-y: auto;
   }
   .sidebar.show { transform: translateX(0); }
-  .main-content {
-    margin-left: 0 !important;
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-  }
 }
 
 @media (min-width: 768px) {
@@ -281,7 +272,7 @@ form {
     overflow-y: auto;
   }
   .main-content {
-    margin-left: 280px;
+    margin-left: 0px;
   }
 }
 
@@ -413,4 +404,28 @@ form {
     color: #ffffff !important; 
     background-color: #9811f3 !important;
     border-color: #9811f3 !important;
+}
+
+/* Переводим всю страницу в режим Flexbox-колонки */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Растягивает body на всю высоту экрана */
+    margin: 0;
+}
+
+/* Заставляем основной блок занимать всё свободное место, 
+   выталкивая футер в самый низ */
+.main-wrapper {
+    flex: 1 0 auto;
+    display: flex;
+    /* Если у тебя фиксированный navbar (height: 56px), 
+       делаем отступ сверху, чтобы контент не залезал под него */
+    padding-top: 56px; 
+}
+
+/* Наш футер всегда будет внизу и во всю ширину */
+.footer {
+    flex-shrink: 0;
+    width: 100%;
 }

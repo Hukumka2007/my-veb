@@ -10,16 +10,16 @@ class QuestionForm(ModelForm):
 
         widgets = {
             "title": TextInput(attrs={
-                'class': 'form-control',
+                'class': 'form-control form-control-lg',
                 'placeholder': 'Заголовок'
             }), 
             "content": Textarea(attrs={
                 'class': 'form-control',
                 'placeholder': 'Текст вопроса',
-                'row': 5
+                'rows': 6
             }),
             "subsubject": Select(attrs={
-                'class': 'form-control',
+                'class': 'form-select form-control-lg',
             }),
             "image": ClearableFileInput(attrs={
                 'class': 'form-control',
