@@ -53,10 +53,10 @@ body {
 
 .sidebar a:hover { 
     background: #e9ecef; 
-    color: #5e17eb; 
+    color: #9811f3; 
 }
 .sidebar .active { 
-    background: #5e17eb; 
+    background: #9811f3; 
     color: white !important; 
 }
 
@@ -85,7 +85,7 @@ body {
     color: #666;
     list-style: none;
 }
-.sidebar li.active { background-color: #f3e8ff; color: #5e17eb; font-weight: bold; }
+.sidebar li.active { background-color: #f3e8ff; color: #9811f3; font-weight: bold; }
 .sidebar li:hover:not(.active) { background-color: #eee; }
 
 /* Подменю */
@@ -109,7 +109,7 @@ body {
     transition: 0.3s;
 }
 .has-submenu div:hover { background-color: #eee; }
-.submenu li.active-sub { color: #8a2be2; font-weight: 600; }
+.submenu li.active-sub { color: #9811f3; font-weight: 600; }
 
 /* Карточки вопросов */
 .question-card {
@@ -124,8 +124,8 @@ body {
 
 /* Бейджи */
 .badge { padding: 4px 12px; border-radius: 15px; font-size: 0.8rem; font-weight: bold; }
-.math { background: #f3e8ff; color: #8a2be2; }
-.physics { background: #e0f2fe; color: #0284c7; }
+.math { background: #f3e8ff; color: #9811f3; }
+.physics { background: #e0f2fe; color: #9811f3; }
 .default-badge { background: #eee; color: #666; }
 
 /* Формы и поля */
@@ -170,7 +170,7 @@ body {
     background: #f1f1f1;
     outline: none;
 }
-.btn-ask { background-color: #8a2be2; color: white; border: none; padding: 8px 20px; border-radius: 8px; cursor: pointer; font-weight: 600; }
+.btn-ask { background-color: #9811f3; color: white; border: none; padding: 8px 20px; border-radius: 8px; cursor: pointer; font-weight: 600; }
 .btn-login { background-color: transparent; border: 1px solid #ddd; padding: 8px 20px; border-radius: 8px; cursor: pointer; }
 
 /* Авторизация */
@@ -179,7 +179,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #8a2be2, #4b0082);
+    background: linear-gradient(135deg, #9811f3, #4b0082);
 }
 .auth-card {
     background: white;
@@ -312,8 +312,8 @@ form {
    /*ФИОЛЕТОВЫЙ СТИЛЬ КНОПОК И ИДЕАЛЬНОЕ ЦЕНТРИРОВАНИЕ ШАПКИ*/
 /* Стили кнопок под новый дизайн */
 .btn-purple-main {
-    background-color: #5e17eb !important;
-    border-color: #5e17eb !important;
+    background-color: #9811f3 !important;
+    border-color: #9811f3 !important;
     color: #ffffff !important;
     border-radius: 20px !important; /* Округлые аккуратные кнопки из макета */
     font-weight: 600 !important;
@@ -321,22 +321,22 @@ form {
     transition: all 0.2s ease-in-out !important;
 }
 .btn-purple-main:hover {
-    background-color: #4a11c8 !important;
-    border-color: #4a11c8 !important;
+    background-color: #9811f3 !important;
+    border-color: #9811f3 !important;
     box-shadow: 0 4px 10px rgba(94, 23, 235, 0.25) !important;
 }
 
 .btn-purple-outline {
     background-color: transparent !important;
-    border-color: #5e17eb !important;
-    color: #5e17eb !important;
+    border-color: #9811f3 !important;
+    color: #9811f3 !important;
     border-radius: 20px !important;
     font-weight: 600 !important;
     padding: 6px 18px !important;
     transition: all 0.2s ease-in-out !important;
 }
 .btn-purple-outline:hover {
-    background-color: #5e17eb !important;
+    background-color: #9811f3 !important;
     color: #ffffff !important;
 }
 
@@ -406,11 +406,11 @@ form {
 
 /*КНОПКИ "НАЙТИ"*/
 .navbar form .input-group .btn {
-    color: #35088e !important;
+    color: #9811f3 !important;
     font-weight: 700 !important;
 }
 .navbar form .input-group .btn:hover {
     color: #ffffff !important; 
-    background-color: #834df0 !important;
-    border-color: #5e17eb !important;
+    background-color: #9811f3 !important;
+    border-color: #9811f3 !important;
 }
